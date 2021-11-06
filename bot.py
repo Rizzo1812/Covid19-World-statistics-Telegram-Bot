@@ -85,7 +85,7 @@ def info(update, contex):
         "This BOT uses free APIs provided by RapidAPI\n"
         "https://rapidapi.com/\n\n"
         "The code of this BOT is open source\n"
-        "Source code is on GitHub: https://github.com/Rizzo1812/Covid19-daily-report-Telegram-Bot\n\n"
+        "Source code is on GitHub: https://github.com/Rizzo1812/Covid19-World-statistics-Telegram-Bot\n\n"
         "©️ Credits ©️\n"
         "This BOT uses a list of all countries made by selimata (GitHub user)\n"
         "https://gist.github.com/selimata")
@@ -94,7 +94,7 @@ def info(update, contex):
 # Handle /worldstats command (send Covid19 global statistics)
 def countrystats(update, context):
     update.message.reply_text(
-        'Now select country',
+        'Now select the country for which you want to get statistics ',
         reply_markup=ReplyKeyboardMarkup(
             country_keyboard, one_time_keyboard=True, input_field_placeholder='Select country'
         ),
